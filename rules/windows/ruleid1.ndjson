@@ -1,7 +1,7 @@
 {"rule_id":"57d825c9-9408-4100-9830-471201550989","name":"SharpHound PowerShell Execution","description":"SharpHound skriptinin yaddaşda və ya komanda sətrində icrasının aşkarlanması","severity":"high","type":"query","query":"process.name:\"powershell.exe\" AND process.command_line:(*SharpHound* OR *Invoke-BloodHound* OR *Get-DomainComputer*)","language":"kuery","enabled":true,"index":["logs-endpoint.events.*","winlogbeat-*"],"risk_score":73,"threat":[{"framework":"MITRE ATT&CK","technique":[{"id":"T1059.001","name":"PowerShell"}]}]}{
   "rule_id": "57d825c9-9408-4100-9830-471201550989",
   "name": "SharpHound PowerShell Execution",
-  "description": "SharpHound skriptinin yaddaşda və ya komanda sətrində icrasının aşkarlanması",
+  "description": "SharpHound skriptinin yaddaşda və ya komanda sətrində",
   "severity": "high",
   "type": "query",
   "query": "process.name:\"powershell.exe\" AND process.command_line:(*SharpHound* OR *Invoke-BloodHound* OR *Get-DomainComputer*)",
